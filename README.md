@@ -11,3 +11,5 @@ Run the container as a daemon
 Enter to the container
 
 `docker exec -it $CONTAINER_ID bash`
+
+Copyright (c) 2018 Julien Reichardt - ISC License
