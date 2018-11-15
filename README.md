@@ -1,6 +1,13 @@
-# This repository contains my Dockerfiles
+# Docker images for running systemd
 
-- The `systemd` and `openrc` directories contain init-enabled docker images in which services are able to run.
-- `crystal-alpine` contains an image based on Alpine to compile statically linked Crystal applications
+You can use this images as base containers to run systemd services inside.
 
-Copyright (c) 2018 Julien Reichardt - ISC License
+## Usage
+
+Run the container as a daemon
+
+`docker run -d --cap-add SYS_ADMIN -v /sys/fs/cgroup:/sys/fs/cgroup:ro jrei/$IMAGE`
+
+Enter to the container
+
+`docker exec -it $CONTAINER_ID bash`
