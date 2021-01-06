@@ -10,7 +10,7 @@ You can use this image as a base container to run systemd services inside.
 
 Run the container as a daemon
 
-`docker run -d --privileged --name systemd-debian -v /sys/fs/cgroup:/sys/fs/cgroup:ro joepublic/systemd-debian:8`
+`docker run -d --privileged --name systemd-debian -v /sys/fs/cgroup:/sys/fs/cgroup:ro joepublic/systemd-debian:latest`
 
 Enter to the container
 
